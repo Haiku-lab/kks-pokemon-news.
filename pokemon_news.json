@@ -1,0 +1,985 @@
+{
+  "updated_at": "2026-10-31T10:41:46.446590+00:00",
+  "items": [
+    {
+      "country": "JP",
+      "title": "イベント初心者の方はこちら エンジョイ！",
+      "url": "https://players.pokemon-card.com/#enjoy",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "真剣勝負を楽しみたい方はこちら チャレンジ！",
+      "url": "https://players.pokemon-card.com/#challenge",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "大会の最新情報はこちら チャンピオンシップシリーズ",
+      "url": "https://www.pokemon-card.com/event/championshipseries/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 千葉」ジュニアリーグの追加エントリーについて 2026.10.30",
+      "url": "https://www.pokemon-card.com/info/005738.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「シティリーグ2027 シーズン2」がポケモンカードジムでスタート！ 2026.10.30",
+      "url": "https://www.pokemon-card.com/info/005737.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンカードゲーム スクランブルバトル 香川」開催！ 2026.10.30",
+      "url": "https://www.pokemon-card.com/info/005740.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケモンカードストア、新店登場！ 2026.2.20",
+      "url": "https://www.pokemon-card.com/info/004753.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンカードゲーム学園祭2026」開催！ 2026.5.1",
+      "url": "https://www.pokemon-card.com/info/005452.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「ハドウシーカー」が、11月27日（金）に発売！ 2026.10.23",
+      "url": "https://www.pokemon-card.com/ex/m7/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 千葉」同伴保護者の事前登録について 2026.10.23",
+      "url": "https://www.pokemon-card.com/info/005728.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 「スペシャルデッキセットMEGA  メガオーダイル・メガカイリュー・メガゲンガー」が11月13日（金）に発売！ 2026.10.16",
+      "url": "https://www.pokemon-card.com/products/mega/mg.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【公式】ポケモンカードチャンネルでポケモンカードゲーム 30周年記念映像を配信！ 2026.10.16",
+      "url": "https://www.pokemon-card.com/info/005701.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「みんなのポケモンカードユニバース」公開！ 2026.10.16",
+      "url": "https://www.30tharchive.pokemon-card.com",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント プロモカードパック第6弾、公開！ 2026.10.16",
+      "url": "https://www.pokemon-card.com/info/005705.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 千葉」 2026年11月22日（日）～23日（月・祝）開催！ 2026.10.9",
+      "url": "https://www.pokemon-card.com/info/005666.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケどこポケカ部 みんなで進化合宿！」の参加者募集を開始！ 2026.9.6",
+      "url": "https://www.30th.pokemon-card.com/event/30thevent/entry",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケどこポケカ部　放課後ポケっす！教室」へようこそ！ 2026.10.4",
+      "url": "https://www.pokemon-card.com/ex/houkago/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ここからデビュー！はじめてポケカ体験会」開催！ 2026.7.17",
+      "url": "https://www.pokemon-card.com/info/005559.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「Pokémon Team Masters」の開催が決定！ 2026.9.28",
+      "url": "https://www.pokemon-card.com/info/005678.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「30thプロモカードパック」紹介記事のカード画像誤りについて 2026.9.28",
+      "url": "https://www.pokemon-card.com/info/005692.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」優勝者インタビュー 2026.9.25",
+      "url": "https://www.pokemon-card.com/info/005690.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 【重要】9月21日13時台更新「チャンピオンズリーグ2027 横浜」開催状況について 2026.9.21",
+      "url": "https://www.pokemon-card.com/info/005688.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 【重要】9月20日12時更新「チャンピオンズリーグ2027 横浜」開催状況について 2026.9.20",
+      "url": "https://www.pokemon-card.com/info/005687.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 【重要】「チャンピオンズリーグ2027 横浜」開催について 2026.9.19",
+      "url": "https://www.pokemon-card.com/info/005686.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 【重要】台風25号接近に伴う「チャンピオンズリーグ2027 横浜」開催判断について 2026.9.18",
+      "url": "https://www.pokemon-card.com/info/005677.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027」における「ポケモンワールドチャンピオンシップス2027」出場権の獲得条件変更について 2026.9.18",
+      "url": "https://www.pokemon-card.com/info/005675.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケカチャンネル10周年記念イベント開催！ 2026.9.18",
+      "url": "https://www.pokemon-card.com/info/005676.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」のライブ配信が決定！ 2026.9.11",
+      "url": "https://www.pokemon-card.com/info/005663.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 9月から日本各地の大学で「ポケモンカードゲーム学園祭2026」を開催！ 2026.9.11",
+      "url": "https://www.pokemon-card.com/info/005452.html ",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「30th CELEBRATION」が、9月16日（水）に発売！ 2026.6.2",
+      "url": "https://www.30th.pokemon-card.com/product/m6a",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 「30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー」が、9月16日（水）に発売！ 2026.6.7",
+      "url": "https://www.30th.pokemon-card.com/product/mf",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 9月16日（水）に発売のデッキシールドを一挙紹介！ 2026.9.9",
+      "url": "https://www.30th.pokemon-card.com/product/goods-01",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 9月16日（水）に発売のデッキケースを一挙紹介！ 2026.9.9",
+      "url": "https://www.30th.pokemon-card.com/product/goods-02",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 9月16日（水）に発売のプレイマットを一挙紹介！ 2026.9.9",
+      "url": "https://www.30th.pokemon-card.com/product/goods-03",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 9月16日（水）に発売のポケモンカードゲーム周辺グッズを一挙紹介！ 2026.9.9",
+      "url": "https://www.30th.pokemon-card.com/product/goods-04",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 9月16日（水）に発売のショッピングバッグを一挙紹介！ 2026.9.9",
+      "url": "https://www.30th.pokemon-card.com/product/goods-05",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「プロモカードパック 25th ANNIVERSARY edition」の使用についてのお知らせ 2026.9.9",
+      "url": "https://www.pokemon-card.com/info/005662.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンカードゲーム 30th CELEBRATION EVENT」の最新情報を公開！ 2026.9.4",
+      "url": "https://www.30th.pokemon-card.com/event/30thevent/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」ジュニアリーグの追加エントリーについて 2026.9.4",
+      "url": "https://www.pokemon-card.com/info/005627.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」サイドイベントについて 2026.9.4",
+      "url": "https://www.pokemon-card.com/info/005622.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 競技向けルール「ペナルティガイドライン」「裁定事例集」の更新のお知らせ 2026.9.4",
+      "url": "https://www.pokemon-card.com/info/005630.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「ex★（イーエックススター）」と描かれた、新シリーズのロゴが公開！ 2026.8.31",
+      "url": "https://www.pokemon-card.com/info/005613.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「シティリーグ2027 シーズン1」事前抽選のエントリー期間延長のお知らせ 2026.8.31",
+      "url": "https://www.pokemon-card.com/info/005629.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」のデッキ登録について 2026.8.28",
+      "url": "https://www.pokemon-card.com/info/005626.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」同伴保護者の事前登録について 2026.8.28",
+      "url": "https://www.pokemon-card.com/info/005624.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント メガエルレイドexSARゲットバトル、10月分エントリー開催！ 2026.8.28",
+      "url": "https://www.pokemon-card.com/info/005507.html ",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 本人認証に使用するアプリの切り替えについて 2026.8.21",
+      "url": "https://www.pokemon-card.com/info/005606.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「シティリーグ2027 シーズン1」がポケモンカードジムでスタート！ 2026.8.21",
+      "url": "https://www.pokemon-card.com/info/005608.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケカジムエントリーキャンペーン2026年後期、9月1日スタート！ 2026.8.21",
+      "url": "https://www.pokemon-card.com/info/005614.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "コラム プレイヤー名鑑が更新されました 2026.1.9",
+      "url": "https://www.pokemon-card.com/event/topplayers/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 みずべのポケモンたちのカードイラストがフィギュアになって登場！ 2026.8.20",
+      "url": "https://www.pokemon-card.com/info/005610.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」エントリー期間および抽選結果発表日の延長について 2026.8.17",
+      "url": "https://www.pokemon-card.com/info/005612.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンWCS2026」カードゲーム部門のライブ配信を楽しもう！プレゼント企画も！ 2026.8.14",
+      "url": "https://www.pokemon-card.com/info/005605.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント デッキそのままバトル、開催！ 2026.8.14",
+      "url": "https://www.pokemon-card.com/info/005604.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2027 横浜」 2026年9月20日（日）～22日（火・祝）開催！ 2026.8.7",
+      "url": "https://www.pokemon-card.com/info/005563.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケモンカードゲーム チャンピオンシップシリーズ2027について 2026.8.7",
+      "url": "https://www.pokemon-card.com/info/005597.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント チャンピオンシップポイント累計賞品の発送に伴う、情報登録・更新のお願い 2026.8.7",
+      "url": "https://www.pokemon-card.com/info/005602.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】プレイヤーズクラブの本人認証システムの障害について 2026.8.3",
+      "url": "https://www.pokemon-card.com/info/005596.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】プレイヤーズクラブへの本人認証システムの導入について 2026.8.3",
+      "url": "https://www.pokemon-card.com/info/005557.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「ヒカキン道場！ポケカ入門バトル」の開催について 2026.7.31",
+      "url": "https://www.pokemon-card.com/info/005595.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "コラム 拡張パック「ストームエメラルダ」のカードを使ったデッキレシピを公開！ 2026.7.31",
+      "url": "https://www.pokemon-card.com/info/005568.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンカードゲーム スクランブルバトル 大阪」開催！ 2026.6.26",
+      "url": "https://www.pokemon-card.com/info/005543.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント メガエルレイドexSARゲットバトル、開催！ 2026.6.26",
+      "url": "https://www.pokemon-card.com/info/005507.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント おうちでシールド戦「ストームエメラルダ」キャンペーン開催！ 2026.7.31",
+      "url": "https://www.pokemon-card.com/info/005506.html ",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「ストームエメラルダ」が、7月31日（金）に発売！ 2026.6.26",
+      "url": "https://www.pokemon-card.com/ex/m6/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 構築デッキ「スターターセットex」3種が、7月31日（金）に発売！ 2026.6.26",
+      "url": "https://www.pokemon-card.com/ex/me/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント お友達や家族と行こう 「いっしょにフレンドバトル」！ 2026.7.24",
+      "url": "https://www.pokemon-card.com/info/005569.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント プロモカードパック第5弾、公開！ 2026.7.17",
+      "url": "https://www.pokemon-card.com/info/005567.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】本人認証に使用する「デジタル認証アプリ」における事前の利用登録のお願い 2026.7.13",
+      "url": "https://www.pokemon-card.com/info/005554.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「ポケモンカードゲーム プレイヤーズクラブ」生年月日変更機能の期間限定解放について 2026.7.3",
+      "url": "https://www.pokemon-card.com/info/005556.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント おうちでシールド戦「ストームエメラルダ」キャンペーン、開催！ 2026.6.26",
+      "url": "https://www.pokemon-card.com/info/005506.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケカデビューしよう！バトルアカデミー体験会」開催！ 2026.1.16",
+      "url": "https://www.pokemon-card.com/info/004983.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンジャパンチャンピオンシップス2026」優勝者インタビュー 2026.6.19",
+      "url": "https://www.pokemon-card.com/info/005538.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 30周年記念商品におけるマイナンバーカードを使用した本人確認システムの活用について 2026.6.8",
+      "url": "https://www.pokemon-card.com/info/005510.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 「30th CELEBRATION FUTURISTIC BOX」が、9月16日（水）に発売！ 2026.6.7",
+      "url": "https://www.30th.pokemon-card.com/product/furbox",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント チャンピオンシップシリーズ2027シーズンが9月よりスタート！ 2026.6.7",
+      "url": "https://www.pokemon-card.com/info/005517.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ピカチュウ」もらえる！ ジムイベントに参加しよう！ 2026.6.7",
+      "url": "https://www.pokemon-card.com/info/005516.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 メンテナンスのおしらせ 2026.6.5",
+      "url": "https://www.pokemon-card.com/info/005513.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 ポケモン公式チャンネルでポケモンカードゲーム 30周年記念商品の最新情報を公開！ 2026.5.29",
+      "url": "https://www.pokemon-card.com/info/005500.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 裁定事例集の更新のおしらせ 2026.5.29",
+      "url": "https://www.pokemon-card.com/rules/index.html#s1",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 拡張パック「ニンジャスピナー」収録カードのイラスト誤りについて 2026.5.29",
+      "url": "https://www.pokemon-card.com/info/005508.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンジャパンチャンピオンシップス2026」カードゲーム部門のライブ配信が決定！ 2026.5.22",
+      "url": "https://www.pokemon-card.com/info/005502.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 行きつけのポケカジムで優勝しよう！マイジムNo.1決定戦開催！ 2026.5.22",
+      "url": "https://www.pokemon-card.com/info/005505.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "コラム 拡張パック「アビスアイ」のカードを使ったデッキレシピを公開！ 2026.5.22",
+      "url": "https://www.pokemon-card.com/info/005504.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】ポケモンカードゲームの商品販売・イベントにおける本人確認システムの導入について 2026.5.21",
+      "url": "https://www.pokemon-card.com/info/005450.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「アビスアイ」が、5月22日（金）に発売！ 2026.4.17",
+      "url": "https://www.pokemon-card.com/ex/m5/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンジャパンチャンピオンシップス2026」同伴保護者の事前登録について 2026.5.15",
+      "url": "https://www.pokemon-card.com/info/005480.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知May」優勝者インタビュー 2026.5.15",
+      "url": "https://www.pokemon-card.com/info/005499.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンシップシリーズ2026」リーグ別CSPランキングを掲載 2026.5.8",
+      "url": "https://www.pokemon-card.com/info/005477.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 ポケモンカードゲームからのお願い 2026.5.8",
+      "url": "https://www.pokemon-card.com/info/005474.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」のライブ配信が決定！ 2026.5.1",
+      "url": "https://www.pokemon-card.com/info/005459.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」の招待選手が決定！ 2026.5.1",
+      "url": "https://www.pokemon-card.com/info/005460.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケモンジャパンチャンピオンシップス2026」6月6日（土）・7日（日）開催！ 2026.3.6",
+      "url": "https://www.pokemon-card.com/info/005411.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」その他コーナーについて 2026.4.17",
+      "url": "https://www.pokemon-card.com/info/005458.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケリーダー・松丸くん「ポケモンジャパンチャンピオンシップス2026」に出場！ 2026.4.19",
+      "url": "https://www.pokemon-card.com/info/005461.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」ジュニアリーグ2日目大会の追加エントリーについて 2026.4.17",
+      "url": "https://www.pokemon-card.com/info/005464.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント プロモカードパック第4弾、公開！ 2026.4.17",
+      "url": "https://www.pokemon-card.com/info/005463.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ゴールデンウィークはポケモンカードジムにいこう！ 2026.4.17",
+      "url": "https://www.pokemon-card.com/info/005462.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」同伴保護者の事前登録について 2026.4.10",
+      "url": "https://www.pokemon-card.com/info/005455.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 石川県産業展示館（４号館）にて開催！ 2026.2.22",
+      "url": "https://www.pokemon-card.com/info/005403.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」優勝者インタビュー 2026.4.3",
+      "url": "https://www.pokemon-card.com/info/005454.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 トレーナーズウェブサイト、プレイヤーズクラブの不具合について 2026.3.30",
+      "url": "https://www.pokemon-card.com/info/005453.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 愛知 May」 2026年5月9日（土）・10日（日）開催！ 2026.3.30",
+      "url": "https://www.pokemon-card.com/info/005439.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」のライブ配信が決定！ 2026.3.19",
+      "url": "https://www.pokemon-card.com/info/005435.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」の招待選手が決定！ 2026.3.19",
+      "url": "https://www.pokemon-card.com/info/005436.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケモンカードゲーム教室（4月分）開催のお知らせ 2026.3.19",
+      "url": "https://www.pokemon-card.com/info/004877.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」その他コーナーについて 2026.3.6",
+      "url": "https://www.pokemon-card.com/info/005420.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "コラム 拡張パック「ニンジャスピナー」のカードを使ったデッキレシピを公開！ 2026.3.13",
+      "url": "https://www.pokemon-card.com/info/005437.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 ポケモンカードゲーム スカーレット＆バイオレット スペシャルBOXの追加生産、および追加販売のお知らせ 2026.3.13",
+      "url": "https://www.pokemon-card.com/info/005069.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】「ポケモンカードゲーム プレイヤーズクラブ」ログイン時の二要素認証の詳細について 2026.1.23",
+      "url": "https://www.pokemon-card.com/info/005371.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 カードイラストがフィギュアになって登場！ 2026.3.6",
+      "url": "https://www.pokemon-card.com/info/005413.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」ジュニアリーグの追加エントリーについて 2026.3.6",
+      "url": "https://www.pokemon-card.com/info/005416.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「シティリーグ2026 シーズン4」がスタート！ 2026.2.13",
+      "url": "https://www.pokemon-card.com/info/005389.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 ポケモンカードゲーム 30周年記念商品 世界同時発売決定！ 2026.2.27",
+      "url": "https://www.pokemon-card.com/info/005385.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 福岡」優勝者インタビュー 2026.2.27",
+      "url": "https://www.pokemon-card.com/info/005415.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」同伴保護者の事前登録について 2026.2.27",
+      "url": "https://www.pokemon-card.com/info/005414.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント お友達や家族と行こう 「いっしょにフレンドバトル」！ 2026.2.27",
+      "url": "https://www.pokemon-card.com/info/005417.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「ニンジャスピナー」が、3月13日（金）に発売！ 2026.2.13",
+      "url": "https://www.pokemon-card.com/ex/m4/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「ポケっす広場2026」開催決定！ 2026.2.22",
+      "url": "https://www.pokemon-card.com/info/005395.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 ポケモンカードゲームのプロジェクションマッピングの放映が決定！ 2026.2.20",
+      "url": "https://www.pokemon-card.com/info/005387.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケモンカードゲーム教室（3月分）開催のお知らせ 2026.2.20",
+      "url": "https://www.pokemon-card.com/info/004876.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケカジムエントリーキャンペーン2026年前期、3月1日スタート！ 2026.2.20",
+      "url": "https://www.pokemon-card.com/info/005397.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 エクストラレギュレーションにおける使用できるカード変更のお知らせ 2026.2.19",
+      "url": "https://www.pokemon-card.com/info/005398.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 大阪」2026年3月28日（土）・29日（日）開催！ 2026.2.13",
+      "url": "https://www.pokemon-card.com/info/005354.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 福岡」の招待選手が決定！ 2026.2.13",
+      "url": "https://www.pokemon-card.com/info/005383.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 福岡」のライブ配信が決定！ 2026.2.13",
+      "url": "https://www.pokemon-card.com/info/005382.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ゲスト参加決定！追加先着応募開始！ 2026.1.30",
+      "url": "https://www.pokemon-card.com/info/005309.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 福岡」その他コーナーについて 2026.1.30",
+      "url": "https://www.pokemon-card.com/info/005374.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント プロモカードパック第3弾、公開！ 2026.1.30",
+      "url": "https://www.pokemon-card.com/info/005377.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 一部商品価格改定のお知らせ 2026.1.30",
+      "url": "https://www.pokemon-card.com/info/005376.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 競技向けフロアルール更新のおしらせ 2026.1.30",
+      "url": "https://www.pokemon-card.com/info/005379.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 追加開催が決定！ 2026.1.25",
+      "url": "https://www.pokemon-card.com/info/005292.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "コラム 拡張パック「ムニキスゼロ」のカードを使ったデッキレシピを公開！ 2026.1.23",
+      "url": "https://www.pokemon-card.com/info/005370.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 「スタートデッキ100 バトルコレクション」の一部デッキにおける封入内容の誤りに関するお詫びと交換対応について 2026.1.23",
+      "url": "https://www.pokemon-card.com/info/005344.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "商品 拡張パック「ムニキスゼロ」の、収録カードをさらに大公開！ 2026.1.9",
+      "url": "https://www.pokemon-card.com/ex/m3/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント 「チャンピオンズリーグ2026 福岡」同伴保護者の事前登録について 2026.1.16",
+      "url": "https://www.pokemon-card.com/info/005352.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 エクストラレギュレーションにおける使用できるカード変更のお知らせ 2026.1.16",
+      "url": "https://www.pokemon-card.com/info/005353.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "イベント ポケモンカードゲーム教室（2月分）開催のお知らせ 2026.1.16",
+      "url": "https://www.pokemon-card.com/info/004875.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "その他 【重要】「ポケモンカードゲーム プレイヤーズクラブ」二要素認証導入のお知らせと、メール受信確認のお願い 2026.1.9",
+      "url": "https://www.pokemon-card.com/info/005332.html",
+      "release_date": null,
+      "status": "date_a_verifier"
+    },
+    {
+      "country": "JP",
+      "title": "https://www.pokemon-card.com/",
+      "url": "https://www.pokemon-card.com/",
+      "release_date": null,
+      "status": "date_a_verifier"
+    }
+  ]
+}
