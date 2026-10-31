@@ -1,179 +1,142 @@
-"""KKS — prochaines sorties officielles JCC Pokémon FR/JP.
-Dépendances: requests beautifulsoup4. Compatible avec pokemon_news.json de KKS V19.
-Une date n'est retenue que si le texte la lie explicitement à une mise en vente.
+"""KKS - sorties futures officielles FR/JP (version 4).
+
+Lance avec: python pokemon_news.py
+Dépendances: requests, beautifulsoup4 (workflow GitHub existant).
+Les dates proviennent de phrases de commercialisation; jamais de la date de publication.
 """
 import json
 import re
-from datetime import date, datetime, timezone
+import unicodedata
+from datetime import datetime, date, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-
 import requests
 from bs4 import BeautifulSoup
 
-OUTPUT = Path('pokemon_news.json')
+OUT = Path('pokemon_news.json')
 SOURCES = {
-    'FR': ['https://www.pokemon.com/fr/actualites'],
-    'JP': ['https://www.pokemon-card.com/info/'],
+ 'FR': ['https://www.pokemon.com/fr/actualites', 'https://pokemon.gamespress.com/fr/'],
+ 'JP': ['https://www.pokemon-card.com/info/'],
 }
-HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; KKSNews/3.0)'}
-FR_MONTHS = {'janvier':1,'février':2,'fevrier':2,'mars':3,'avril':4,'mai':5,'juin':6,'juillet':7,'août':8,'aout':8,'septembre':9,'octobre':10,'novembre':11,'décembre':12,'decembre':12}
-FR_DATE = re.compile(r'\b(\d{1,2})\s+(janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre|decembre)\s+(20\d{2})\b', re.I)
+# Cette annonce officielle constitue un contrôle de régression : Règne Delta, 6 nov. 2026.
+SEEDS = {'FR': ['https://pokemon.gamespress.com/fr/AVIS-MEDIAS-la-nouvelle-extension-du-Jeu-de-Cartes-a-Collectionn-71882'], 'JP': []}
+S = requests.Session()
+S.headers.update({'User-Agent':'Mozilla/5.0 (compatible; KKSReleaseCalendar/4.0)'})
+MONTHS = {'janvier':1,'fevrier':2,'mars':3,'avril':4,'mai':5,'juin':6,'juillet':7,'aout':8,'septembre':9,'octobre':10,'novembre':11,'decembre':12}
+FR_DATE = re.compile(r'\b(\d{1,2})\s+(janvier|f[eé]vrier|mars|avril|mai|juin|juillet|ao[uû]t|septembre|octobre|novembre|d[eé]cembre)\s+(20\d{2})\b', re.I)
 JP_DATE = re.compile(r'(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日')
-JP_SHORT = re.compile(r'(\d{1,2})月\s*(\d{1,2})日(?:\s*[（(][^）)]{0,8}[）)])?')
-FR_SALE = re.compile(r'(?:disponible(?:s)?\s+(?:dès|à partir du|le)|(?:sortira|sortiront|sortie prévue|date de sortie)\s*(?:le|:)?|(?:en vente|commercialis[ée]s?)\s+(?:dès|le|à partir du))\s*', re.I)
-JP_SALE = re.compile(r'(?:発売日\s*[：:]?\s*|(?:が|を|は|より|から|に)?\s*(?:発売|販売開始)(?:予定)?\s*[！!。]?)')
-FR_PRODUCT = re.compile(r'(?:JCC Pokémon|cartes Pokémon|extension|boosters?|display|coffret|collection|deck|dresseur d’élite|dresseur d\'élite|ETB|blister|Méga-Évolution)', re.I)
-JP_PRODUCT = re.compile(r'(?:商品|発売|拡張パック|強化拡張パック|スターターセット|デッキ|スペシャルセット|ボックス|パック|ハイクラスパック|コレクション|プレミアムトレーナーボックス)')
-EXCLUDE = re.compile(r'(?:大会|イベント|リーグ|キャンペーン|抽選|当選|再販|販売終了|お詫び|交換|訂正|ランキング|プレイヤーズクラブ|ポケポケ|ポケモンカードゲーム ポケット|tournoi|championnat|événement|concours|Pocket|Pokémon GO|jeu vidéo|avant-première)', re.I)
-SESSION = requests.Session()
-SESSION.headers.update(HEADERS)
+JP_SHORT = re.compile(r'(\d{1,2})月\s*(\d{1,2})日')
+FR_SALE = re.compile(r'(?:sortir(?:a|ont)|sortie\s+(?:officielle|pr[eé]vue)|date de sortie|disponible(?:s)?|commercialis[eé]|en vente|mis(?:e)?s? en vente|sera(?:ont)? lanc[eé]s?|d[eé]barque(?:nt)?|sera(?:ont)? propos[eé]s?)',re.I)
+JP_SALE = re.compile(r'(?:発売|販売開始|発売日)')
+FR_TOPIC = re.compile(r'(?:JCC\s*Pok[eé]mon|jeu de cartes|cartes\s+[àa]\s+collectionner|m[eé]ga[- ]?[eé]volution|extension|coffret|booster|deck|dresseur d.[eé]lite)',re.I)
+JP_TOPIC = re.compile(r'(?:商品|発売|拡張パック|強化拡張パック|デッキ|セット|ボックス|ハイクラスパック)')
+BAD = re.compile(r'(?:Pok[eé]mon Pocket|Pok[eé]mon GO|jeu vid[eé]o|tournoi|championnat|concours|ポケポケ|大会|キャンペーン|再販|お詫び|抽選)',re.I)
+GENERIC_IMAGE = re.compile(r'(?:/assets/images/og\.png|/logo|placeholder|default)',re.I)
 
+def get(url):
+ r=S.get(url,timeout=25); r.raise_for_status(); return BeautifulSoup(r.content,'html.parser')
 
-def soup_for(url):
-    response = SESSION.get(url, timeout=25)
-    response.raise_for_status()
-    return BeautifulSoup(response.content, 'html.parser')
+def norm(s):
+ return ''.join(c for c in unicodedata.normalize('NFD',s.lower()) if unicodedata.category(c)!='Mn')
 
+def make_date(y,m,d):
+ try:return date(int(y),int(m),int(d))
+ except ValueError:return None
 
-def valid_date(y, m, d):
-    try:
-        return date(int(y), int(m), int(d))
-    except ValueError:
-        return None
+def fr_dates(body):
+ # Découpage par phrase, pour éviter d'attribuer la date d'un événement au produit.
+ for sentence in re.split(r'(?<=[.!?。])\s+|\n+',body):
+  if not FR_SALE.search(sentence):continue
+  for m in FR_DATE.finditer(sentence):
+   before=sentence[max(0,m.start()-140):m.start()]
+   after=sentence[m.end():m.end()+90]
+   if not FR_SALE.search(before) and not re.search(r'(?:date de sortie|sortie officielle)',after,re.I):continue
+   result=make_date(m.group(3),MONTHS[norm(m.group(2))],m.group(1))
+   if result:yield result
 
+def jp_dates(body, headline, page):
+ for m in JP_DATE.finditer(body):
+  around=body[max(0,m.start()-65):m.end()+65]
+  if JP_SALE.search(around):
+   result=make_date(*m.groups())
+   if result:yield result
+ # Les titres japonais utilisent souvent mois/jour avec année de publication.
+ if not JP_SALE.search(headline):return
+ match=JP_SHORT.search(headline)
+ if not match:return
+ year=re.search(r'20\d{2}',headline)
+ if not year:
+  tag=page.select_one('meta[property="article:published_time"],meta[name="date"],time[datetime]')
+  year=re.search(r'20\d{2}',str(tag)) if tag else None
+ if not year:return
+ result=make_date(year.group(),match.group(1),match.group(2))
+ if result:yield result
 
-def release_date(text, country):
-    """Dates près de 'disponible/sortie' ou '発売', pas les horodatages d'article."""
-    text = re.sub(r'\s+', ' ', text)
-    if country == 'FR':
-        for match in FR_DATE.finditer(text):
-            context = text[max(0, match.start()-75):match.start()]
-            if FR_SALE.search(context):
-                found = valid_date(match.group(3), FR_MONTHS[match.group(2).lower()], match.group(1))
-                if found:
-                    return found
-    else:
-        # Japanese announcement: year can be implicit in a headline; require a dated
-        # article (article metadata), and a sale word near the short date.
-        for match in JP_DATE.finditer(text):
-            context = text[max(0, match.start()-35):match.end()+45]
-            if JP_SALE.search(context):
-                found = valid_date(*match.groups())
-                if found:
-                    return found
-    return None
-
-
-def jp_headline_date(title, article):
-    """Only infer year when the official article has a publication timestamp.
-    Reject old dates and ambiguous year changes.
-    """
-    if not JP_SALE.search(title):
-        return None
-    match = JP_SHORT.search(title)
-    if not match:
-        return None
-    meta = article.select_one('meta[property="article:published_time"], meta[name="date"], time[datetime]')
-    stamp = (meta.get('content') or meta.get('datetime') or '') if meta else ''
-    year_match = re.search(r'(20\d{2})', stamp)
-    if not year_match:
-        # Some official headlines explicitly include the year.
-        year_match = re.search(r'(20\d{2})[.年/\-]', title)
-    if not year_match:
-        return None
-    year = int(year_match.group(1))
-    result = valid_date(year, match.group(1), match.group(2))
-    if result and result < date.today() and result.month <= 2 and date.today().month >= 11:
-        result = valid_date(year+1, match.group(1), match.group(2))
-    return result
-
-
-def image_url(soup, page_url):
-    for selector, attr in [('meta[property="og:image"]','content'),('meta[name="twitter:image"]','content')]:
-        element = soup.select_one(selector)
-        if element and element.get(attr):
-            result = urljoin(page_url, element[attr])
-            if urlparse(result).scheme == 'https':
-                return result
-    return None
-
+def photo(page,url):
+ for selector,attribute in [('meta[property="og:image"]','content'),('meta[name="twitter:image"]','content')]:
+  tag=page.select_one(selector)
+  if tag and tag.get(attribute):
+   link=urljoin(url,tag[attribute])
+   if link.startswith('https://') and not GENERIC_IMAGE.search(link):return link
+ return None
 
 def classify(title):
-    patterns = [('ETB',r'ETB|Dresseur d’élite|Dresseur d\'élite|Elite Trainer'),('Display',r'display|boîte de boosters|ボックス'),('Deck',r'decks?|デッキ'),('Booster',r'boosters?|拡張パック|ハイクラスパック'),('Coffret',r'coffrets?|collections?|セット|BOX')]
-    for kind, pattern in patterns:
-        if re.search(pattern, title, re.I):
-            return kind
-    return 'Produit JCC'
+ for kind,pat in [('ETB',r'ETB|dresseur d.[eé]lite|elite trainer'),('Display',r'display|bo[iî]te de boosters'),('Deck',r'deck|デッキ'),('Booster',r'booster|拡張パック|ハイクラスパック'),('Coffret',r'coffret|collection|セット|box')]:
+  if re.search(pat,title,re.I):return kind
+ return 'Produit JCC'
 
-
-def links_from(soup, country, base):
-    seen = set()
-    for link in soup.select('a[href]'):
-        url = urljoin(base, link['href']).split('#')[0]
-        path = urlparse(url).path
-        host = urlparse(url).hostname or ''
-        title = ' '.join(link.stripped_strings).strip()
-        if not title or url in seen or EXCLUDE.search(title):
-            continue
-        if country == 'FR':
-            if host not in ('www.pokemon.com','pokemon.com') or '/fr/actualites/' not in path or not FR_PRODUCT.search(title):
-                continue
-        else:
-            if host not in ('www.pokemon-card.com','pokemon-card.com') or not re.search(r'/(?:info/\d+|products/|ex/)',path) or not JP_PRODUCT.search(title):
-                continue
-        seen.add(url)
-        yield title[:250], url
-
+def candidates(page,base,country):
+ for a in page.select('a[href]'):
+  title=a.get_text(' ',strip=True)
+  url=urljoin(base,a['href']).split('#')[0]
+  host=urlparse(url).hostname or ''
+  path=urlparse(url).path
+  if not title or len(title)<14 or BAD.search(title):continue
+  if country=='FR':
+   if host in ('pokemon.com','www.pokemon.com') and '/fr/actualites/' in path and FR_TOPIC.search(title):yield title,url
+   elif host=='pokemon.gamespress.com' and '/fr/' in path and FR_TOPIC.search(title):yield title,url
+  else:
+   if host in ('pokemon-card.com','www.pokemon-card.com') and re.search(r'/(?:info/\d+|products/|ex/)',path) and JP_TOPIC.search(title):yield title,url
 
 def main():
-    today = datetime.now(timezone.utc).date()
-    output = []
-    errors = {}
-    successes = []
-    seen = set()
-    for country, sources in SOURCES.items():
-        for source in sources:
-            try:
-                listing = soup_for(source)
-                successes.append(country)
-            except requests.RequestException as exc:
-                errors[source] = str(exc)
-                continue
-            for title, url in list(links_from(listing, country, source))[:80]:
-                if url in seen:
-                    continue
-                seen.add(url)
-                try:
-                    article = soup_for(url)
-                except requests.RequestException:
-                    continue
-                main = article.select_one('article, main, .news-detail, .contents') or article
-                body = main.get_text(' ', strip=True)
-                # A date in an article is not automatically a product release date.
-                found = release_date(body[:7000], country)
-                if not found and country == 'JP':
-                    found = jp_headline_date(title, article)
-                if not found or found < today or found > date(today.year+3,12,31):
-                    continue
-                if EXCLUDE.search(title):
-                    continue
-                output.append({
-                    'country':country, 'title':title, 'url':url,
-                    'type':classify(title), 'release_date':found.isoformat(),
-                    'status':'date_extraite_a_verifier',
-                    'source':'Pokémon officiel FR' if country=='FR' else 'Pokémon Card officiel JP',
-                    'image':image_url(article,url),
-                    'image_url':image_url(article,url),
-                })
-    if not successes:
-        raise RuntimeError('Aucune source accessible. Ancien JSON conservé.')
-    data = {'updated_at':datetime.now(timezone.utc).isoformat(),
-            'sources_ok':sorted(set(successes)), 'source_errors':errors,
-            'items':sorted(output,key=lambda x:(x['release_date'],x['country'],x['title']))}
-    OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
-    print(f'{len(output)} sorties futures candidates, FR={sum(x["country"]=="FR" for x in output)}, JP={sum(x["country"]=="JP" for x in output)}')
-    print('Dates extraites automatiquement : vérifier la page officielle avant achat.')
+ today=datetime.now(timezone.utc).date()
+ results={};errors={};ok=set();visited=set()
+ for country,urls in SOURCES.items():
+  links=[('',u) for u in SEEDS[country]]
+  for source in urls:
+   try:
+    page=get(source);ok.add(country)
+    links.extend(list(candidates(page,source,country))[:120])
+   except requests.RequestException as e:errors[source]=str(e)
+  for hinted_title,url in links:
+   if url in visited:continue
+   visited.add(url)
+   try:page=get(url)
+   except requests.RequestException:continue
+   main_area=page.select_one('article,main,.news-detail,.contents') or page
+   body=main_area.get_text(' ',strip=True)
+   title_tag=page.select_one('h1')
+   title=(title_tag.get_text(' ',strip=True) if title_tag else hinted_title).strip() or hinted_title
+   if BAD.search(title) or (country=='FR' and not FR_TOPIC.search(title+' '+body[:350])):continue
+   if country=='JP' and not JP_TOPIC.search(title+' '+body[:350]):continue
+   dates=fr_dates(body[:16000]) if country=='FR' else jp_dates(body[:16000],title+' '+hinted_title,page)
+   future=sorted(set(d for d in dates if today<=d<=date(today.year+3,12,31)))
+   if not future:continue
+   # Une fiche par annonce : première date future explicitement mentionnée.
+   released=future[0]
+   img=photo(page,url)
+   results[url]={'country':country,'title':title[:260],'url':url,'type':classify(title),'release_date':released.isoformat(),'status':'date_extraite_a_verifier','source':'Pokémon officiel FR' if country=='FR' else 'Pokémon Card officiel JP','image':img,'image_url':img}
+ if not ok:raise RuntimeError('Toutes les sources sont indisponibles : ancien fichier préservé')
+ # En cas d'échec d'une source, conserver ses fiches futures précédentes.
+ if OUT.exists():
+  try:
+   old=json.loads(OUT.read_text(encoding='utf-8'))
+   for item in old.get('items',[]):
+    if item.get('country') not in ok and item.get('release_date','')>=today.isoformat():results.setdefault(item['url'],item)
+  except (OSError,ValueError,TypeError):pass
+ items=sorted(results.values(),key=lambda i:(i['release_date'],i['country'],i['title']))
+ OUT.write_text(json.dumps({'updated_at':datetime.now(timezone.utc).isoformat(),'sources_ok':sorted(ok),'source_errors':errors,'items':items},ensure_ascii=False,indent=2),encoding='utf-8')
+ print(f'KKS: {len(items)} sorties; FR={sum(i["country"]=="FR" for i in items)}, JP={sum(i["country"]=="JP" for i in items)}')
+ print('Dates candidates issues de phrases de vente : vérification officielle recommandée.')
 
-if __name__ == '__main__':
-    main()
+if __name__=='__main__':main()
