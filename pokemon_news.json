@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T15:10:42.070238+00:00",
+  "updated_at": "2026-11-04T15:27:20.507305+00:00",
   "sources_ok": [
     "FR",
     "JP"
@@ -49,6 +49,17 @@
       "source": "Pokémon Card officiel JP",
       "image": "https://www.pokemon-card.com/ex/m7/assets/images/ogp.png",
       "image_url": "https://www.pokemon-card.com/ex/m7/assets/images/ogp.png"
+    },
+    {
+      "country": "FR",
+      "title": "La partie 2 du pass d’extension de Pokémon Pokopia : Déclic déco sera disponible le 9 décembre",
+      "url": "https://www.pokemon.com/fr/actualites/la-partie-2-du-pass-dextension-de-pokemon-pokopia-declic-deco-sera-disponible-le-9-decembre",
+      "type": "Produit JCC",
+      "release_date": "2026-12-09",
+      "status": "date_extraite_a_verifier",
+      "source": "Pokémon officiel FR",
+      "image": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/fr/img/video-games/tiles/pokemon-pokopia/2026/11/04/pokemon-pokopia-169-fr.png",
+      "image_url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/fr/img/video-games/tiles/pokemon-pokopia/2026/11/04/pokemon-pokopia-169-fr.png"
     }
   ]
 }
