@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T15:29:06.684290+00:00",
+  "updated_at": "2026-11-06T15:05:06.730916+00:00",
   "sources_ok": [
     "FR",
     "JP"
@@ -8,19 +8,19 @@
   "items": [
     {
       "country": "FR",
-      "title": "AVIS MÉDIAS : La nouvelle extension du Jeu de Cartes à Collectionner Pokémon, 30ᵉ Anniversaire , sort aujourd’hui pour célébrer 30 ans de Pokémon",
-      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIAS-La-nouvelle-extension-du-Jeu-de-Cartes-a-Collectionn-50219",
+      "title": "AVIS MÉDIAS : la nouvelle extension du Jeu de Cartes à Collectionner Pokémon Méga-Évolution – Règne Delta marque le grand retour de Méga-Rayquaza-ex dans les combats Pokémon",
+      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIAS-la-nouvelle-extension-du-Jeu-de-Cartes-a-Collectionn-71882",
       "type": "Coffret",
-      "release_date": "2026-11-05",
+      "release_date": "2026-11-06",
       "status": "date_extraite_a_verifier",
       "source": "Pokémon officiel FR",
-      "image": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/06/301334-fdb5c96f/Pokemon_TCG_30th_Celebration_Logo_Vertical_FR.png?w=203&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=48a2f6663480dc9c186e733994a6e57c770237064d0046be5f417e984a848d4c",
-      "image_url": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/06/301334-fdb5c96f/Pokemon_TCG_30th_Celebration_Logo_Vertical_FR.png?w=203&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=48a2f6663480dc9c186e733994a6e57c770237064d0046be5f417e984a848d4c"
+      "image": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/08/201046-def6cfe8/Pokemon_TCG_Mega_Evolution—Delta_Reign_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=ba7130a02c3beee923acad448a6ec344ec78771fd2af0b5ba0c205273a2d4930",
+      "image_url": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/08/201046-def6cfe8/Pokemon_TCG_Mega_Evolution—Delta_Reign_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=ba7130a02c3beee923acad448a6ec344ec78771fd2af0b5ba0c205273a2d4930"
     },
     {
       "country": "FR",
-      "title": "AVIS MÉDIAS : la nouvelle extension du Jeu de Cartes à Collectionner Pokémon Méga-Évolution – Règne Delta marque le grand retour de Méga-Rayquaza-ex dans les combats Pokémon",
-      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIAS-la-nouvelle-extension-du-Jeu-de-Cartes-a-Collectionn-71882",
+      "title": "AVIS MÉDIA : le Pokémon légendaire Méga-Rayquaza-ex fond dans le combat avec la nouvelle extension Méga‑Évolution – Règne Delta du Jeu de Cartes à Collectionner Pokémon disponible aujourd’hui",
+      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIA-le-Pokemon-legendaire-Mega-Rayquaza-ex-fond-dans-le-c-89473",
       "type": "Coffret",
       "release_date": "2026-11-06",
       "status": "date_extraite_a_verifier",
