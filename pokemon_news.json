@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T16:35:44.528264+00:00",
+  "updated_at": "2026-11-20T16:10:32.804903+00:00",
   "sources_ok": [
     "FR",
     "JP"
@@ -7,15 +7,15 @@
   "source_errors": {},
   "items": [
     {
-      "country": "FR",
-      "title": "AVIS MÉDIA : les Pokémon Méga-Évolution Z font leurs débuts dans la nouvelle extension du JCC Pokémon bientôt disponible : Méga-Évolution – Poings Fluide",
-      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIA-les-Pokemon-Mega-Evolution-Z-font-leurs-debuts-dans-la-nouv",
+      "country": "JP",
+      "title": "ピカチュウのカードイラストがフィギュアになって登場！",
+      "url": "https://www.pokemon-card.com/info/005764.html",
       "type": "Produit JCC",
-      "release_date": "2026-11-19",
+      "release_date": "2026-11-27",
       "status": "date_extraite_a_verifier",
-      "source": "Pokémon officiel FR",
-      "image": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/11/191026-05fddb31/Pokemon_TCG_Mega_Evolution—Flowing_Fists_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=b6316b106f1b6f16131cd4cf03fb1d5af803e2c80e7f20300a7986d5bf754892",
-      "image_url": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/11/191026-05fddb31/Pokemon_TCG_Mega_Evolution—Flowing_Fists_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=b6316b106f1b6f16131cd4cf03fb1d5af803e2c80e7f20300a7986d5bf754892"
+      "source": "Pokémon Card officiel JP",
+      "image": null,
+      "image_url": null
     },
     {
       "country": "JP",
@@ -38,6 +38,17 @@
       "source": "Pokémon officiel FR",
       "image": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/08/201046-def6cfe8/Pokemon_TCG_Mega_Evolution—Delta_Reign_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=ba7130a02c3beee923acad448a6ec344ec78771fd2af0b5ba0c205273a2d4930",
       "image_url": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/08/201046-def6cfe8/Pokemon_TCG_Mega_Evolution—Delta_Reign_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=ba7130a02c3beee923acad448a6ec344ec78771fd2af0b5ba0c205273a2d4930"
+    },
+    {
+      "country": "FR",
+      "title": "AVIS MÉDIA : les Pokémon Méga-Évolution Z font leurs débuts dans la nouvelle extension du JCC Pokémon bientôt disponible : Méga-Évolution – Poings Fluide",
+      "url": "https://pokemon.gamespress.com/fr/AVIS-MEDIA-les-Pokemon-Mega-Evolution-Z-font-leurs-debuts-dans-la-nouv",
+      "type": "Produit JCC",
+      "release_date": "2027-02-06",
+      "status": "date_extraite_a_verifier",
+      "source": "Pokémon officiel FR",
+      "image": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/11/191026-05fddb31/Pokemon_TCG_Mega_Evolution—Flowing_Fists_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=b6316b106f1b6f16131cd4cf03fb1d5af803e2c80e7f20300a7986d5bf754892",
+      "image_url": "https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/11/191026-05fddb31/Pokemon_TCG_Mega_Evolution—Flowing_Fists_Logo_FR.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=b6316b106f1b6f16131cd4cf03fb1d5af803e2c80e7f20300a7986d5bf754892"
     },
     {
       "country": "FR",
